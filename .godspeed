@@ -1,0 +1,22 @@
+{
+  "mongodb": {
+    "mode": "single",
+    "dbName": "godspeed",
+    "ports": [
+      27017
+    ]
+  },
+  "postgresql": false,
+  "kafka": false,
+  "elasticsearch": false,
+  "redis": false,
+  "servicePort": 3000,
+  "gsNodeServiceVersion": "latest",
+  "projectName": "project2",
+  "meta": {
+    "createTimestamp": "2025-01-08T16:43:08.428Z",
+    "lastUpdateTimestamp": "2025-01-08T16:43:08.428Z",
+    "cliVersionWhileCreation": "2.9.2",
+    "cliVersionWhileLastUpdate": "2.9.2"
+  }
+}

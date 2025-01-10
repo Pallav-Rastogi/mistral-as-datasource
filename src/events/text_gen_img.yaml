@@ -1,0 +1,25 @@
+http.get./mistral_text_img:
+  summary: "Generate text response against prompt with an image input from MistralAI"
+  description: "Endpoint to send a user prompt with image attachment to MistralAI and retrieve the AI-generated response"
+  fn: generatetextfromimage
+  authn: false
+  params:
+    - name: prompt
+      in: query
+      required: true
+      description: "The user's prompt or question for MistralAI to respond to"
+      schema:
+        type: string
+    - name: imgurl
+      in: query
+      required: false
+      description: "URL of the image"
+      schema:
+        type: string
+  responses:
+    '200':
+      description: "Successful response from MistralAI"
+      content:
+        application/json:
+          schema:
+            type: string

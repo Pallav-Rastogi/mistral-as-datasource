@@ -1,0 +1,19 @@
+http.get./mistral_moderate:
+  summary: "Moderate text to detect harmful text content along several policy dimensions"
+  description: "Endpoint to send a user prompt to MistralAI and retrieve the AI-generated moderation remark"
+  fn: moderate
+  authn: false
+  params:
+    - name: prompt
+      in: query
+      required: true
+      description: "The user's prompt or question for MistralAI to moderate"
+      schema:
+        type: string
+  responses:
+    200:
+      description: "Successful response from MistralAI"
+      content:
+        application/json:
+          schema:
+            type: string

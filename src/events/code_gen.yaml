@@ -1,0 +1,19 @@
+http.get./mistral_code:
+  summary: "Generate codeblock as response against prompt from MistralAI (Codestral Mamba 7B Instruct Endpoint)"
+  description: "Endpoint to send a user prompt to MistralAI and retrieve the AI-generated code"
+  fn: generatecode
+  authn: false
+  params:
+    - name: prompt
+      in: query
+      required: true
+      description: "The user's prompt or question describing the code to be generated"
+      schema:
+        type: string
+  responses:
+    200:
+      description: "Successful response from MistralAI"
+      content:
+        application/json:
+          schema:
+            type: string

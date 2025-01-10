@@ -1,0 +1,13 @@
+type: mistral
+methods:
+  generatetext:
+    model: "mistral-large-latest"
+  generatecode:
+    model: "codestral-mamba-latest"
+    instruction: "Output only executable code with detailed comments explaining each part. Avoid greetings or unrelated text."
+  generatetextfromimage:
+    model: "pixtral-12b"
+  generatejson:
+    model: "mistral-large-latest"
+  moderate:
+    model: "mistral-moderation-latest"
