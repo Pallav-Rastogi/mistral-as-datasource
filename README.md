@@ -69,3 +69,5 @@ This plugin is ideal for applications needing AI-powered content creation, moder
 ---
 
 This Mistral plugin is designed to empower your projects with state-of-the-art AI capabilities. Whether you need intelligent text generation, structured JSON responses, or powerful moderation tools, this plugin has you covered. Start building smarter applications today!
+
+LINK TO DEMO - https://drive.google.com/file/d/1BCLy4DzaeENIQZmDclYZkmM2dTjzv5Py/view?usp=sharing
